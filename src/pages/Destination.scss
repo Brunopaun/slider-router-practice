@@ -1,0 +1,55 @@
+.carousel_set {
+    padding-top: 50px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url('../assets/destination/background-destination-mobile.jpg');
+    background-size: cover;
+    color: #ffffff;
+
+    .carousel {
+        padding-top: 10px;
+        width: 100vw;
+        z-index: 1;
+    
+        .control-dots {
+            position: relative;
+            top: 230px;
+        }
+    
+        li img{
+            max-width: 170px;
+            max-height: 170px;
+        }
+        
+        p {
+            padding: 0 24px 0 24px;
+        }
+    
+        p::after {
+            content: " ";
+            position: absolute;
+            width: 90%;
+            height: 1px;
+            background-color: #383B4B;
+            top: 390px;
+            left: 20px;
+        }
+    
+        h1 {
+            padding-top: 70px;
+            font-size: 56px;
+            font-family: 'Bellefair', serif;
+            line-height: 64px;
+        }
+    
+        h3 {
+            padding-top: 30px;
+        }
+    
+    }
+}
+
+
+

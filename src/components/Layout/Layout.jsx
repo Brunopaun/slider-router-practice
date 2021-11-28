@@ -1,5 +1,6 @@
 import React from 'react';
 import { Navigate, Route, Routes } from 'react-router';
+import "./Layout.module.scss";
 
 import Home from '../../pages/Home';
 import Navigation from '../Navigation/Navigation'
@@ -10,7 +11,7 @@ import Technology from '../../pages/Technology';
 const Layout = () =>{
 
     return (
-        <div>
+        <div className="layout">
             <Navigation></Navigation>
             <main>
                 <Routes>

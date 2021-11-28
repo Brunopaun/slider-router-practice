@@ -1,25 +1,35 @@
-import React from 'react';
+import React, { Fragment, useContext} from 'react';
+
 import MenuItem from './MenuItem';
-import classes from './DropDownMenu.module.scss';
 import { ReactComponent as IconClose } from '../../assets/shared/icon-close.svg';
+import { Context } from '../../context/context';
+
+import classes from './DropDownMenu.module.scss';
 
 const DropDownMenu = () => {
 
+ const {setHover} = useContext(Context);
+
+    const onMouseLeaveHandler = (event)=>{
+        event.preventDefault();
+        setHover(false);
+    }
+
     return (
-        <div className={classes.dropshadow}>
-            <div className={classes.dropdown}></div>
-            <div className={classes.bg}>
-                <a href='/'>
+        <Fragment>
+            <div className={classes.dropdown} ></div>
+            <div className={classes.bg} onMouseLeave={onMouseLeaveHandler}>
+                <a href='/' onClick={onMouseLeaveHandler}>
                     <IconClose/>
                 </a>
                 <ul >
-                    <MenuItem text='HOME'></MenuItem>
-                    <MenuItem text='DESTINATION'></MenuItem>
-                    <MenuItem text='CREW'></MenuItem>
-                    <MenuItem text='TECHNOLOGY'></MenuItem>
+                    <MenuItem text='Home'></MenuItem>
+                    <MenuItem text='Destination'></MenuItem>
+                    <MenuItem text='Crew'></MenuItem>
+                    <MenuItem text='Technology'></MenuItem>
                 </ul>
             </div>
-        </div>
+        </Fragment>
     )
 }
 

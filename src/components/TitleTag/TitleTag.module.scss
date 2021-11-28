@@ -1,0 +1,21 @@
+.titletag {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center;
+    padding-top: 20px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 12px;
+    letter-spacing: 2.7px;
+    line-height: 19px;
+    font-weight: 400;
+    
+    .tittletag__number {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 19.2px;
+        letter-spacing: 2.7px;
+        opacity: 0.25;
+        padding-right: 7px;
+    }
+}

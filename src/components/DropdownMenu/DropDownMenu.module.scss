@@ -1,17 +1,8 @@
 @import '../../index.scss';
 
-    .dropshadow {
-        display: none;
-    }
-
     .dropdown{
-        position: absolute;
-        background: map-get($colors , 'secondary' );
-        opacity: 5%;
-        width: 300px;
-        height: 100vh;
-        left: 144px;
-        top: 0px;
+        position: relative;
+        display: inline-block;
     }
     
     .bg {
@@ -23,8 +14,9 @@
         width: 65%;
         -webkit-backdrop-filter: blur(30px);
         backdrop-filter: blur(30px);
-        
-    
+        display: flex;
+        flex-direction: column;
+
         > ul {
             counter-set: item 0;
             list-style-type: none;
@@ -33,9 +25,12 @@
         }
     
         > a {
+            width: 20px;
+            height: 20px;
+            align-self: flex-end;
             position: relative;
-            left: 230px;
-            top: 30px;
+            padding-top: 20px;
+            padding-right: 50px;
         }
     }    
 
