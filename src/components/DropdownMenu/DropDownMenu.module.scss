@@ -12,8 +12,8 @@
         right: 1px;
         top: 0px;
         width: 65%;
-        -webkit-backdrop-filter: blur(30px);
-        backdrop-filter: blur(30px);
+        -webkit-backdrop-filter: blur(40px);
+        backdrop-filter: blur(40px);
         display: flex;
         flex-direction: column;
 
@@ -31,6 +31,38 @@
             position: relative;
             padding-top: 20px;
             padding-right: 50px;
+        }
+
+
+        @media (min-width: 1024px) {
+            right: 0px;
+            width: 60%;
+            height: 100px;
+            display: flex;
+            
+
+            > ul {
+                display: flex;
+                padding-top:40px;
+                padding-left: 350px;
+                flex-direction: row;
+                gap: 48px;
+
+                &::before{
+                    content: " ";
+                    position: absolute;
+                    left: -500px;
+                    top: 56px;
+                    background-color: #ffffff;
+                    width: 800px;
+                    height: 1px;
+                    opacity: 0.40;
+                }
+            }
+
+            > a {
+                display: none;
+            }
         }
     }    
 

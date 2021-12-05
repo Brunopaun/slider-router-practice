@@ -8,6 +8,10 @@ import crewHurley from '../assets/crew/image-douglas-hurley.png';
 import crewMark from '../assets/crew/image-mark-shuttleworth.png';
 import crewVictor from '../assets/crew/image-victor-glover.png';
 
+import launchVehicle from '../assets/technology/image-launch-vehicle-landscape.jpg';
+import spacePort from '../assets/technology/image-spaceport-landscape.jpg';
+import spaceCapsule from '../assets/technology/image-space-capsule-landscape.jpg';
+
 
 export const PLANETS = [
     {id: 'MOON',
@@ -63,4 +67,22 @@ export const CREW = [
         text: 'Anousheh Ansari is an Iranian American eginner and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the fist self-funded woman to flu to the ISS, and the first Iranian in space.'
     }
 
+]
+
+export const SPACESHIPS = [
+    {
+        id: 'LAUCH VEHICLE',
+        url: launchVehicle,
+        text: 'A lauch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth`s surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Stading 150 metres tall, it`s quite an awe-inspiring sight on the launch'
+    },
+    {
+        id: 'SPACEPORT',
+        url: spacePort,
+        text: 'A spaceport or consmodrome is a site for lauching(or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spacepor is ideally situated to take advantage of the Earth`s rotation for launch.'
+    },
+    {
+        id: 'SPACE CAPSULE',
+        url: spaceCapsule,
+        text: 'A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth`s atmosphere without wings. Our capsule is where you`ll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.',
+    }
 ]

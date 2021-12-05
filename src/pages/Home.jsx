@@ -13,7 +13,7 @@ const Home = () => {
                     <p>Let`s face it; if you want to go to space, you might as well genuinely go to outer space and not hover king of on the edge of it. Well sit back and realx because we`ll give you a truly ou of this world experience!</p>
                 </div>
                 <div className ={classes.button}>
-                    <Link to="/destination">EXPLORE</Link>
+                    <Link to="/destination" className={classes.button__text}>EXPLORE</Link>
                 </div>
             </div>
         </React.Fragment>

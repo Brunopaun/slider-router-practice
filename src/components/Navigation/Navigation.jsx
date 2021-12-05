@@ -12,6 +12,9 @@ const Navigation = () => {
             <NavigationMenu>
                 <DropDownMenu/>
             </NavigationMenu>
+            <div className={classes.nav__fullscreen}>
+                <DropDownMenu/>
+            </div>
         </nav>
     )
 }

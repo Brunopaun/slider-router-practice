@@ -62,5 +62,48 @@
         }
     }
 
+
+    @media (min-width: 1024px) {
+        background: url(../assets/home/background-home-desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex-direction: row;
+        align-items: center;
+        padding: 350px 165px 0 165px;
+
+        > div {
+            width: 450px;
+            height: 382px;
+            color: #D0D6F9;
+
+            h5 {
+                font-size: 28px;
+                line-height: 33.6px;
+                letter-spacing: 4.72px;
+            }
+
+            h1 {
+                font-size: 150px;
+                line-height: 171.9px;
+                color: #ffffff;
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 32px;
+            }
+        }
+
+        .button {
+            width: 274px;
+            height: 274px;
+
+            .button__text {
+                font-size: 32px;
+                letter-spacing: 2px;
+                line-height: 36.67px;
+            }
+        }
+    }
 }
 

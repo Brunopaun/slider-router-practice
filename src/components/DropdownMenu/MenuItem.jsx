@@ -14,7 +14,7 @@ const MenuItem = (props)=>{
 
     return (
         <li className={classes.item} onClick={onMenuHoverHandler}>
-            <Link to={`/${props.text}`} >{props.text}</Link>
+            <Link to={`/${props.text}`} className={classes.item__a}>{props.text}</Link>
         </li>
     )
 }

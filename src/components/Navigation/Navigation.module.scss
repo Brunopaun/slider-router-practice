@@ -9,4 +9,19 @@
     align-items: center;
     padding: 24px 24px 0px 24px ;
     z-index: 10;
+    
+    @media (min-width: 1024px) {
+        top: 64px;
+        padding-left: 55px;        
+    }
+    
+}
+
+.nav__fullscreen{
+    display: none;
+    
+    @media (min-width: 1024px) {
+        display: block;
+    }
+    
 }

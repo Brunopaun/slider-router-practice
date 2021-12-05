@@ -1,5 +1,5 @@
 .carousel_set {
-    padding-top: 50px;
+    padding-top: 60px;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -9,9 +9,6 @@
     color: #ffffff;
 
     .carousel {
-        padding-top: 10px;
-        width: 100vw;
-        z-index: 1;
     
         .control-dots {
             position: relative;
@@ -33,7 +30,7 @@
             width: 90%;
             height: 1px;
             background-color: #383B4B;
-            top: 390px;
+            top: 410px;
             left: 20px;
         }
     
@@ -48,6 +45,73 @@
             padding-top: 30px;
         }
     
+    }
+
+    @media (min-width: 1024px) {
+        background: url(../assets/destination/background-destination-desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .carousel {
+            position: relative;
+            width: 100vh;           
+            padding: 0px 200px 0px 200px;
+
+            li img {
+                max-width: 445px;
+                max-height: 445px;
+                
+            }
+
+            .carousel_content {
+                display: flex;
+                gap: 100px;
+                padding-left: 80px;
+
+                > div {
+                    position: relative;
+                    padding-left: 10px;
+                    bottom: 30px;                       
+                    
+                    .carousel_content__tag {
+                        display: flex;
+                        padding-top: 50px;
+                        gap: 30px;
+                        padding-left: 240px;
+    
+                        div {
+                            text-align: left;
+                        }
+                    }
+                }
+               
+
+                p {
+                    padding-left: 240px;
+                    text-align: justify;
+                    padding-top: 50px;
+                }
+
+                h1 {
+                    text-align: justify;
+                    padding-left: 240px;
+                    font-size: 100px;
+                    
+                }
+
+                p::after {
+                    top: 300px;
+                    left: 250px;
+                    width: 61%;
+                }
+            }
+             
+            .control-dots {
+                top: 30px;
+                left: 275px;
+                padding-bottom: 50px;                
+            }
+        }
     }
 }
 

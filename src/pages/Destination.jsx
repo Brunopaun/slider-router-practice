@@ -62,15 +62,23 @@ const Destination = () =>{
           >
              {PLANETS.map((planet) => {
                return(
-               <div key={planet.id} >
+               <div key={planet.id} className="carousel_content">
                  <img src={planet.url} alt={planet.id}/>
                  <div>
-                   <h1>{planet.id}</h1>
-                   <p>{planet.text}</p>
-                   <h3>AVG. DISTANCE</h3>
-                   <span>{planet.distance}</span>
-                   <h3>EST. TRAVEL TIME</h3>
-                   <span>{planet.time}</span>
+                   <div>
+                    <h1>{planet.id}</h1>
+                    <p>{planet.text}</p>
+                   </div>
+                   <div className="carousel_content__tag">
+                     <div>
+                        <h3>AVG. DISTANCE</h3>
+                        <span>{planet.distance}</span>
+                     </div>
+                     <div>
+                        <h3>EST. TRAVEL TIME</h3>
+                        <span>{planet.time}</span>
+                     </div>
+                   </div>
                  </div>
                </div>
              )

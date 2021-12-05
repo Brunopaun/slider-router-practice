@@ -8,8 +8,7 @@
     font-size: 12px;
     letter-spacing: 2.7px;
     line-height: 19px;
-    font-weight: 400;
-    
+
     .tittletag__number {
         font-size: 18px;
         font-weight: 700;
@@ -17,5 +16,18 @@
         letter-spacing: 2.7px;
         opacity: 0.25;
         padding-right: 7px;
+    }
+
+    @media (min-width:1024px) {
+        font-size: 20px;
+        line-height: 33.6px;
+        letter-spacing: 4.72px;
+        padding: 0px 1000px 100px 0px;
+        
+
+        .tittletag__number {
+            font-size: 28px;
+            line-height: 33.6px;
+        }
     }
 }
