@@ -5,4 +5,4 @@ This website was created to practice some features like slider, routing, and rea
 So, we used react-responsive-carousel to set up our sliders which was a good practice of making use of libs. To practice a bit of sass, we developed the whole CSS with SASS using the modules approach.
 
 --Learnings
-When talking about responsiveness, I find complicated the use of sass as the only technology for building its CSS which could be sorted of with Tailwind. The project needs some improvements, most related to the implementation of react-responsive-carousel and its styles. 
+When talking about responsiveness, I find complicated the use of sass as the only technology for building its CSS which could be sorted out with Tailwind. The project needs some improvements, most related to the implementation of react-responsive-carousel and its styles. 
